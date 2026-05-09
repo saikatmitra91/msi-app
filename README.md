@@ -36,3 +36,8 @@ The live URL is whatever GitHub Pages assigns the repo (configured under
 `src/lib/observability.ts` is a Sentry-shaped shim that no-ops until
 `NEXT_PUBLIC_SENTRY_DSN` is set. Use `track.event(...)` and `track.error(...)`
 from app code; the swap to real Sentry is a single-file change.
+
+## CI status
+
+The `CI` workflow runs lint, typecheck, tests, and a production build on
+every PR. Green here = safe to merge.
